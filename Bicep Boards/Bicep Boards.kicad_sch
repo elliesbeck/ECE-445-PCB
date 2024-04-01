@@ -1190,6 +1190,7 @@
   (no_connect (at 116.84 74.93) (uuid 07555fab-84f3-4fc0-a57f-fbcc1ab3e315))
   (no_connect (at 256.54 55.88) (uuid 0a40bd94-55f8-407c-b1ce-88debae0094e))
   (no_connect (at 110.49 167.64) (uuid 0a585e60-226e-4c14-a1f9-186c87cad6a9))
+  (no_connect (at 116.84 87.63) (uuid 15d9d27f-35ee-42c8-b668-35047a7188a0))
   (no_connect (at 86.36 49.53) (uuid 2ab8d2d2-735a-43fa-a274-1141bf351b88))
   (no_connect (at 116.84 77.47) (uuid 38d8ddf5-3a86-4721-9a75-9f2070b4fb67))
   (no_connect (at 256.54 48.26) (uuid 3975648d-0e5b-492b-b703-be8868881943))
@@ -1217,7 +1218,6 @@
   (no_connect (at 86.36 57.15) (uuid df476afd-2817-48b7-9de4-7b1435862b35))
   (no_connect (at 116.84 52.07) (uuid e2e58a63-5508-4eb9-8024-610831d46bfa))
   (no_connect (at 116.84 85.09) (uuid ed01320a-9ec8-4a4b-aa3f-e851caedac9f))
-  (no_connect (at 116.84 82.55) (uuid fc17ca77-4789-431f-9a31-7c36c1440534))
 
   (wire (pts (xy 46.99 137.16) (xy 50.8 137.16))
     (stroke (width 0) (type default))
@@ -1359,10 +1359,6 @@
     (stroke (width 0) (type default))
     (uuid 63c4d6c9-b321-43ee-8b58-b540982ebb44)
   )
-  (wire (pts (xy 118.11 87.63) (xy 116.84 87.63))
-    (stroke (width 0) (type default))
-    (uuid 63f42595-be23-4057-9e00-f8e45126271e)
-  )
   (wire (pts (xy 232.41 121.92) (xy 228.6 121.92))
     (stroke (width 0) (type default))
     (uuid 646f8b60-be41-40ec-a2d9-49196ad0b343)
@@ -1438,6 +1434,10 @@
   (wire (pts (xy 156.21 170.18) (xy 158.75 170.18))
     (stroke (width 0) (type default))
     (uuid 9566e210-e9f4-406e-8547-89e358835662)
+  )
+  (wire (pts (xy 116.84 82.55) (xy 119.38 82.55))
+    (stroke (width 0) (type default))
+    (uuid 962dccaa-f737-4657-8bf5-d1a9fe48789d)
   )
   (wire (pts (xy 83.82 77.47) (xy 86.36 77.47))
     (stroke (width 0) (type default))
@@ -1738,10 +1738,10 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "SENSOR_SEL" (shape output) (at 118.11 87.63 0) (fields_autoplaced)
+  (global_label "SENSOR_SEL" (shape output) (at 119.38 82.55 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 64893fb2-edbe-40b1-9ab5-441b786698df)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 132.9484 87.63 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 134.2184 82.55 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
@@ -2002,7 +2002,7 @@
     (pin "3" (uuid 1621a72c-6524-47be-b0b4-ee99df777857))
     (pin "2" (uuid 76176617-9591-434a-b46e-ebcd1a2f9f4d))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "U9") (unit 1)
         )
@@ -2028,7 +2028,7 @@
     (pin "1" (uuid 3c99cd0e-b1d0-4ce9-94f2-0f67dc77a4b5))
     (pin "2" (uuid ed1217d2-45e0-466f-91ac-3091bd0f62a6))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "BZ1") (unit 1)
         )
@@ -2090,7 +2090,7 @@
     (pin "2" (uuid e1e01af2-b287-4977-816f-19a67fdcc930))
     (pin "1" (uuid 13ab8988-e9bb-4963-baf7-4e7dbf58089a))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "J1") (unit 1)
         )
@@ -2115,7 +2115,7 @@
     )
     (pin "1" (uuid 8dee26cb-1f70-4c68-8e50-3cba6cba1921))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "#PWR018") (unit 1)
         )
@@ -2139,7 +2139,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "H3") (unit 1)
         )
@@ -2216,7 +2216,7 @@
     (pin "9" (uuid 421d5cf9-1072-48a4-8c16-216ef9296d1c))
     (pin "11" (uuid 1f31c579-97ff-4ab6-9a28-81bd624c4994))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "U4") (unit 1)
         )
@@ -2295,7 +2295,7 @@
     (pin "15" (uuid 91660ff8-be75-428f-bfb1-7c846acab285))
     (pin "3" (uuid ede059d2-38a9-493f-bef0-d02f4610a154))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "U11") (unit 1)
         )
@@ -2320,7 +2320,7 @@
     )
     (pin "1" (uuid 5bd9158d-4bf4-4975-b4f0-77c24b4b7e0f))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "#PWR05") (unit 1)
         )
@@ -2387,7 +2387,7 @@
     (pin "03" (uuid ea14ec9b-f2e0-47bd-a29e-c5d8c64fddd5))
     (pin "05" (uuid 240f0632-ff2c-44d6-a469-53fe6ed194bb))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "J11") (unit 1)
         )
@@ -2456,7 +2456,7 @@
     (pin "04" (uuid faf059ab-15ea-4086-bb4a-dee527ce6668))
     (pin "S1" (uuid 923988e8-8317-44f0-80b5-17e4af51c9ac))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "J9") (unit 1)
         )
@@ -2480,7 +2480,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "H4") (unit 1)
         )
@@ -2504,7 +2504,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "H2") (unit 1)
         )
@@ -2529,7 +2529,7 @@
     )
     (pin "1" (uuid d92fa085-caa8-4989-94e9-319e0a9822b3))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "#PWR016") (unit 1)
         )
@@ -2554,7 +2554,7 @@
     )
     (pin "1" (uuid 9eeb2e4c-06f1-460b-8047-d78e1a5386d5))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "#PWR024") (unit 1)
         )
@@ -2579,7 +2579,7 @@
     )
     (pin "1" (uuid 8ed8a3d7-5ef1-4894-af00-1e70e2c24b43))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "#PWR04") (unit 1)
         )
@@ -2658,7 +2658,7 @@
     (pin "5" (uuid 339b5166-2bf5-4832-848e-06e44da629ea))
     (pin "15" (uuid 6369dba8-5c38-4386-908b-0382a19669f9))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "U12") (unit 1)
         )
@@ -2683,7 +2683,7 @@
     )
     (pin "1" (uuid 332e8e6b-fcb0-4ef1-8ac0-adba06b21224))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "#PWR02") (unit 1)
         )
@@ -2708,7 +2708,7 @@
     )
     (pin "1" (uuid 28059cc7-c9ba-446b-8334-752b1111e9a3))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "#PWR07") (unit 1)
         )
@@ -2733,7 +2733,7 @@
     )
     (pin "1" (uuid a91f20b1-2b09-49dc-9d59-46965b777318))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "#PWR015") (unit 1)
         )
@@ -2758,7 +2758,7 @@
     )
     (pin "1" (uuid 760c0f7b-10e6-401c-8f50-c5649b853211))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "#PWR03") (unit 1)
         )
@@ -2783,7 +2783,7 @@
     )
     (pin "1" (uuid 0b11779a-39fc-4c22-9f9f-adfe4aae5476))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "#PWR01") (unit 1)
         )
@@ -2895,7 +2895,7 @@
     (pin "41_5" (uuid 2cb55d31-6fe5-443f-9107-2a720843c907))
     (pin "21" (uuid 59439869-4475-4ecc-ac82-66ddf0669189))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "U1") (unit 1)
         )
@@ -2920,7 +2920,7 @@
     )
     (pin "1" (uuid b0958a2e-68f6-4025-8559-2f3f08ad16d7))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "#PWR017") (unit 1)
         )
@@ -2945,7 +2945,7 @@
     )
     (pin "1" (uuid 7139f7f2-ebe9-4eb9-b336-5b4a3f4638d6))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "#PWR023") (unit 1)
         )
@@ -2971,7 +2971,7 @@
     (pin "1" (uuid 3c1f10c9-6021-42ad-95b7-b4a07167725a))
     (pin "2" (uuid 3a255ccb-9331-4eb1-94a8-0538d79fd0ec))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "C1") (unit 1)
         )
@@ -2996,7 +2996,7 @@
     )
     (pin "1" (uuid 3dc738fa-f275-448b-adc5-ba231b49e991))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "#PWR011") (unit 1)
         )
@@ -3022,7 +3022,7 @@
     (pin "1" (uuid 7e4fe679-d9a1-4871-9ca2-7465d0c7803b))
     (pin "2" (uuid 8b3abb54-90ef-4476-b5d0-437fbb8f858a))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "C2") (unit 1)
         )
@@ -3048,7 +3048,7 @@
     (pin "2" (uuid ff1c4b11-3917-4fca-9bf7-9505997f06ac))
     (pin "1" (uuid 9a0d4374-8715-408d-8e96-fd4bf9186fa2))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "R1") (unit 1)
         )
@@ -3072,7 +3072,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "H1") (unit 1)
         )
@@ -3097,7 +3097,7 @@
     )
     (pin "1" (uuid 46ba6c32-ed6e-4b12-a9f9-0e1cad8d4af7))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "#PWR010") (unit 1)
         )
@@ -3122,7 +3122,7 @@
     )
     (pin "1" (uuid 0d836967-50e7-4982-b7ea-a86de7d98d7e))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "#PWR014") (unit 1)
         )
@@ -3147,7 +3147,7 @@
     )
     (pin "1" (uuid 2e9cfe63-9de8-4e70-b75d-83c995bd137a))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "#PWR06") (unit 1)
         )
@@ -3172,7 +3172,7 @@
     )
     (pin "1" (uuid 40712417-1e48-46e3-a798-56d90358800e))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "#PWR020") (unit 1)
         )
@@ -3197,7 +3197,7 @@
     )
     (pin "1" (uuid 6f4e82dd-21f0-49d4-b8c3-207eeea6c0e5))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "#PWR021") (unit 1)
         )
@@ -3222,7 +3222,7 @@
     )
     (pin "1" (uuid 41079d1a-82de-4d76-8655-235916bad0a7))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "#PWR08") (unit 1)
         )
@@ -3247,7 +3247,7 @@
     )
     (pin "1" (uuid 4bd2102d-56b2-4984-a0e3-6f964c2b49ae))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "#PWR09") (unit 1)
         )
@@ -3272,7 +3272,7 @@
     )
     (pin "1" (uuid 64e78274-3141-4d2b-b79e-1c1c7964f624))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "#PWR022") (unit 1)
         )
@@ -3297,7 +3297,7 @@
     )
     (pin "1" (uuid 42406cb3-4474-4000-90e3-82e08dd9d3ef))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "#PWR012") (unit 1)
         )
@@ -3364,7 +3364,7 @@
     (pin "01" (uuid 5e0f8fc0-5876-471a-96fa-919927f95bb0))
     (pin "07" (uuid 2f2466ed-fcba-46b7-85ab-7e222c2d6eea))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "J4") (unit 1)
         )
@@ -3389,7 +3389,7 @@
     )
     (pin "1" (uuid ba5e73d1-4746-42b6-b533-4ee38079b40a))
     (instances
-      (project "445_Left_Bicep"
+      (project "Bicep Boards"
         (path "/5276b365-6d0c-4da8-be37-f3b7813500d7"
           (reference "#PWR013") (unit 1)
         )
